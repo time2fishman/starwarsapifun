@@ -1,7 +1,13 @@
+@font-face {
+  font-family: "Starjedi";   /*Can be any text*/
+  src: local("Starjedi"),
+    url("./fonts/Starjedi.ttf") format("truetype");
+}
+
 .App {
   text-align: center;
   background-color: black;
-  opacity: .90;
+  opacity: .80;
 }
 
 .bold {
@@ -20,12 +26,22 @@ button:hover {
 }
 
 .Header {
-  margin-top: 10em;
+  margin-top: 3em;
   padding-top: 10px;
 }
 
 .Search, .Results {
   padding-bottom: 30px;
+}
+
+.Results {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+p {
+  grid-column-start: 2;
+  justify-self: left;
 }
 
 h3, label {
@@ -35,6 +51,7 @@ h3, label {
 input {
   background-color: black;
   color: white;
+  border: 1px rgb(228, 225, 225) solid;
 }
 
 input:focus  {
@@ -50,13 +67,16 @@ span {
   color: yellow;
 }
 
+.starwars-font {
+  color: yellow;
+  font-family: 'Starjedi';
+}
+
 footer {
   position: fixed;
-  left: 0;
+  right: 20px;
   bottom: 0;
   width: 100%;
-  background-color: black;
-  opacity: .90;
   color: white;
-  text-align: center;
+  text-align: right;
 }

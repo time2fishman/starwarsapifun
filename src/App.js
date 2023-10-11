@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Search from './components/Search';
 import Results from './components/Results';
 import './App.css';
+import './fonts/Starjedi.ttf'
 
 function App() {
   // STATE
